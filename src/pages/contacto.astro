@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Footer from '@/sections/Footer.astro';
+import Paye from '@/sections/Paye.astro';
+import Infocontacto from '@/sections/Infocontacto.astro';
+---
+
+<Layout title="¡Bienvenidos a la Birria El Paye!">
+	<Paye/>
+	<main>
+		<Infocontacto/>
+	</main>
+
+	<footer
+    class="mt-20 w-full border-secondary border-t-2 flex flex-col  justify-between items-center md:jusify-between pt-6 pb-20 gap-y-10"
+	></footer>
+	<h3 class="uppercase h-auto m-auto justify-self-center text-secondary text-2xl font-medium flex flex-col max-w-sm mt-6">
+		<span>     Contacto : 5580039815  </span>
+		<br/>
+        <span>  Ubicación :  Desierto de los Leones 6526, San Bartolo Ameyalco, 
+            Álvaro Obregón, 01800 Ciudad de México, CDMX </span>
+    </h3>
+	<Footer/>
+</Layout>
+
+
+
