@@ -1,5 +1,5 @@
 <div id="smoke-bkg" class="fixed top-0 -z-10 h-full w-full">
-	<canvas id="smoke-canvas" aria-label="Efecto de fondo de humo" class="opacity-70" style="height:987px width:880px" ></canvas>
+	<canvas id="smoke-canvas" aria-label="Efecto de fondo de humo" class="opacity-70" style=" width:700px" ></canvas>
 </div>
 
 <script>
@@ -71,7 +71,7 @@ function resize() {
 function animate() {
 	requestAnimationFrame(animate);
 	smokeParticles.forEach(p => {
-		p.rotation.z += 0.001;
+		p.rotation.z += 0.0001;
 	});
 	renderer.render(scene, camera);
 	 
